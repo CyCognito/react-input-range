@@ -1,6 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import SasslintPlugin from 'sasslint-webpack-plugin';
 import path from 'path';
 
 const webpackExampleConfig = {
@@ -45,10 +44,6 @@ const webpackExampleConfig = {
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new SasslintPlugin({
-      glob: './src/scss/**/*.scss',
-      ignorePlugins: ['extract-text-webpack-plugin'],
-    }),
   ],
   resolve: {
     modules: ['node_modules'],

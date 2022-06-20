@@ -56,19 +56,16 @@
     "karma-mocha-reporter": "^2.2.2",
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^2.0.1",
-    "node-sass": "^7.0.0",
+    "karma-webpack": "^3.0.1",
     "postcss-loader": "^1.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass-lint": "^1.10.2",
-    "sass-loader": "^12.4.0",
-    "sasslint-webpack-plugin": "^1.0.4",
     "style-loader": "^0.14.0",
     "uglify-js": "^2.8.16",
-    "uglifyjs-webpack-plugin": "^0.3.1",
-    "webpack": "^4.39.3",
-    "webpack-dev-server": "^4.6.0"
+    "uglifyjs-webpack-plugin": "^1.0.0",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.0.0"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0 || ^17.0.2",
@@ -86,9 +83,6 @@
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint src/js/ --ext .js --ext .jsx",
     "lint:scss": "sass-lint --verbose --no-exit",
-    "prepublish": "npm run build",
-    "pretest": "npm run lint",
-    "test": "karma start --single-run",
     "preversion": "npm test",
     "version": "npm run changelog && git add CHANGELOG.md"
   },
